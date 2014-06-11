@@ -1,6 +1,8 @@
 <div>
 	<h1>Unique Flip</h1>
 	
+	<p>attempts left : {{3 - selects.length}}</p>
+
 	<div class="box">
 		<div ng-repeat="card in cards track by $index">
 			<div class="card" ng-click="select($index)">
