@@ -1,7 +1,13 @@
 <div>
 	<h1>Unique Flip</h1>
-
-	<div ng-repeat="card in cards track by $index">
-		{{card}}
+	
+	<div class="box">
+		<div ng-repeat="card in cards track by $index">
+			<div class="card" ng-click="select($index)">
+				<span ng-show="selects.indexOf($index) != -1">
+					{{card}}
+				</span>
+			</div>
+		</div>
 	</div>
 </div>
